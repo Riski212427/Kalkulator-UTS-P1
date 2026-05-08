@@ -1,0 +1,145 @@
+:root {
+
+    --bg: #f0f0f0;
+
+    --calc-bg: #ffffff;
+
+    --text: #000;
+
+    --btn-bg: #e0e0e0;
+
+    --op-bg: #d1d1d1;
+
+}
+
+
+
+.dark-mode {
+
+    --bg: #121212;
+
+    --calc-bg: #2d2d2d;
+
+    --text: #fff;
+
+    --btn-bg: #444;
+
+    --op-bg: #555;
+
+}
+
+
+
+body {
+
+    background-color: var(--bg);
+
+    color: var(--text);
+
+    font-family: sans-serif;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+}
+
+
+
+.calculator {
+
+    background: var(--calc-bg);
+
+    padding: 20px;
+
+    border-radius: 25px;
+
+    width: 300px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+.display {
+
+    text-align: right;
+
+    margin-bottom: 20px;
+
+    padding: 10px;
+
+    min-height: 60px;
+
+}
+
+
+
+#result { font-size: 2.5rem; font-weight: bold; }
+
+#expression { font-size: 1rem; color: gray; }
+
+
+
+.buttons {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+}
+
+
+
+.btn {
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--btn-bg);
+
+    color: var(--text);
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+}
+
+
+
+.btn-zero { grid-column: span 2; } /* Menampilkan tombol 0 lebih lebar */
+
+.operator { background: var(--op-bg); }
+
+.operator-equal { background: #333; color: white; }
+
+.dark-mode .operator-equal { background: white; color: black; }
+
+
+
+#theme-toggle {
+
+    position:
+
+ absolute;
+
+    top: 20px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+}
